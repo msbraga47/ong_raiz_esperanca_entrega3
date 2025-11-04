@@ -4,6 +4,13 @@
 
 ---
 
+## 🌐 Demonstração Online
+
+Acesse o projeto publicado no GitHub Pages:  
+👉 [https://msbraga47.github.io/ong_raiz_esperanca](https://msbraga47.github.io/ong_raiz_esperanca_entrega3)
+
+---
+
 ## 🧩 Sobre o Projeto
 
 O **Instituto Raiz da Esperança** é uma ONG fictícia criada para representar o impacto social e ambiental através de tecnologia.  
