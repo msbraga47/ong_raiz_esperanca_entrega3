@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Instituto Raiz da Esperança</title>
+  <meta name="description" content="Instituto Raiz da Esperança — plataforma para ONGs.">
+  <link rel="icon" type="image/svg+xml" href="imagens/logo.svg">
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/components.css" />
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a class="logo" href="#/" aria-label="Início — Instituto Raiz da Esperança">
+        <img src="imagens/logo.svg" alt="Logo Instituto Raiz da Esperança" width="140" />
+      </a>
+
+      <nav class="main-nav" role="navigation" aria-label="Menu principal">
+        <button class="burger" aria-expanded="false" aria-controls="menu-list" aria-label="Abrir menu">
+          <span></span><span></span><span></span>
+        </button>
+
+        <ul id="menu-list" class="menu" role="menubar">
+          <li role="none"><a role="menuitem" href="#/" data-link>Início</a></li>
+          <li role="none" class="has-sub">
+            <a role="menuitem" href="#/projetos" data-link>Projetos</a>
+            <ul class="submenu" role="menu">
+              <li role="none"><a role="menuitem" href="#/projetos?cat=educacao" data-link>Educação</a></li>
+              <li role="none"><a role="menuitem" href="#/projetos?cat=meio-ambiente" data-link>Meio Ambiente</a></li>
+            </ul>
+          </li>
+          <li role="none"><a role="menuitem" href="#/doacao" data-link>Doação</a></li>
+          <li role="none"><a role="menuitem" href="#/sobre" data-link>Sobre</a></li>
+          <li role="none"><a role="menuitem" href="#/contato" data-link>Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="app" class="container" tabindex="-1" role="main">
+    <!-- SPA content injected here -->
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <p>© 2025 Instituto Raiz da Esperança. Todos os direitos reservados.</p>
+      <p class="small">Endereço: Rua das Flores, 123 — Embu das Artes, SP</p>
+    </div>
+  </footer>
+
+  <div id="toast" aria-live="polite" aria-atomic="true"></div>
+
+  <script src="js/pages.js"></script>
+  <script src="js/spa.js"></script>
+  <script src="js/formValidation.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+/* layout.css - grid, header, responsive rules */
+.grid{display:grid; grid-template-columns:repeat(12, 1fr); gap:var(--gutter);}
+.col-12{grid-column:1 / -1;}
+.col-8{grid-column: span 8;}
+.col-4{grid-column: span 4;}
+
+.site-header{background:#fff; border-bottom:1px solid var(--color-neutral-300);}
+.header-inner{display:flex; align-items:center; justify-content:space-between; gap:var(--space-3);}
+
+.logo img{display:block;}
+
+/* Nav */
+.main-nav{display:flex; align-items:center; gap:var(--space-2);}
+.menu{list-style:none; display:flex; gap:var(--space-2); margin:0; padding:0; align-items:center;}
+.menu a{color:var(--color-neutral-700); text-decoration:none; padding:6px 10px; border-radius:6px; font-weight:700;}
+.menu a:hover, .menu a:focus{background:rgba(42,157,143,0.06); outline:2px solid transparent;}
+
+.has-sub{position:relative;}
+.submenu{position:absolute; left:0; top:100%; display:none; list-style:none; background:#fff; border:1px solid var(--color-neutral-300); padding:var(--space-2); border-radius:6px; box-shadow:0 12px 36px rgba(0,0,0,0.08);}
+.has-sub:hover .submenu, .has-sub:focus-within .submenu{display:block;}
+
+/* Burger */
+.burger{display:none; background:transparent; border:0; padding:var(--space-1); cursor:pointer;}
+.burger span{display:block; width:22px; height:2px; background:var(--color-neutral-700); margin:4px 0; border-radius:2px;}
+
+/* Footer */
+.site-footer{padding:var(--space-3) 0; color:var(--color-neutral-700); border-top:1px solid var(--color-neutral-300);}
+
+/* Cards */
+.card{background:#fff; padding:var(--space-3); border-radius:10px; box-shadow:0 8px 24px rgba(0,0,0,0.06);}
+
+/* Responsive breakpoints (5 breakpoints) */
+@media (max-width:1400px){ .grid{gap:16px;} }
+@media (max-width:1200px){ .col-8{grid-column:span 7;} .col-4{grid-column:span 5;} }
+@media (max-width:992px){ .container{padding:var(--space-2);} .grid{grid-template-columns:repeat(8, 1fr);} .col-8{grid-column:span 8;} .col-4{grid-column:span 8;} }
+@media (max-width:768px){ .burger{display:inline-flex;} .menu{display:none; position:absolute; right:var(--space-2); top:60px; flex-direction:column; background:#fff; padding:var(--space-2); border-radius:8px; box-shadow:0 8px 24px rgba(0,0,0,0.08);} }
+@media (max-width:576px){ h1{font-size:22px;} h2{font-size:18px;} }
+@media (max-width:420px){ html{font-size:14px;} }
